@@ -1,12 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   Collapse,
   Navbar,
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink
+  NavItem
 } from "reactstrap";
 import logo from "assets/images/ypg_logo.png";
 
@@ -48,7 +48,9 @@ class Navigation extends React.Component {
     const slides = navbarItems.map((item, index) => {
       return (
         <NavItem key={index}>
-          <NavLink href={item.link}>{item.title}</NavLink>
+          <Link className="nav-link" to={item.link}>
+            {item.title}
+          </Link>
         </NavItem>
       );
     });

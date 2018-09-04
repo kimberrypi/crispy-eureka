@@ -1,0 +1,19 @@
+@import "../modules/__variables.scss";
+
+.has-icons-left {
+  padding-left: 10px;
+}
+
+.is-primary {
+  background: $blue;
+}
+
+.is-medium {
+  padding-bottom: 9rem !important;
+  padding-top: 9rem !important;
+}
+
+.is-large {
+  padding-bottom: 12rem !important;
+  padding-top: 12rem !important;
+}
