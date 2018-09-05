@@ -1,7 +1,7 @@
 import React from "react";
-import MissionVision from "Content/MissionVision";
-import Values from "Content/Values";
-import banner from "assets/images/admin_council_bw.png";
+import MissionVision from "./MissionVision";
+import Values from "./Values";
+import banner from "../assets/images/admin_council_bw.png";
 
 const HomePage = () => (
   <React.Fragment>
