@@ -22,7 +22,7 @@ const Values = () => (
         <Row>
           {ideal.map((item, index) => (
             <Col key={index}>
-              <div className="box">
+              <div>
                 <h3 className="display-1 text-center">
                   {item[0].toUpperCase()}
                 </h3>

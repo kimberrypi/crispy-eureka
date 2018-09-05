@@ -1,5 +1,5 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css";
-@import "../modules/__variables.scss";
+// @import "../modules/__variables.scss";
 @import "./partials/navbar.scss";
 @import "./partials/modifiers.scss";
 @import "./partials/section.scss";
@@ -11,10 +11,4 @@
 
 .banner {
   opacity: 50%;
-}
-
-.box {
-  padding: 30px;
-  background: white !important;
-  color: blue !important;
 }

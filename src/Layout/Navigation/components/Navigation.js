@@ -15,18 +15,18 @@ const navbarItems = [
     link: "/",
     title: "Home"
   },
+  // {
+  //   link: "/",
+  //   title: "Membership"
+  // },
   {
-    link: "/",
-    title: "Membership"
-  },
-  {
-    link: "/",
+    link: "/news",
     title: "News"
-  },
-  {
-    link: "/",
-    title: "About"
   }
+  // {
+  //   link: "/",
+  //   title: "About"
+  // }
 ];
 
 class Navigation extends React.Component {

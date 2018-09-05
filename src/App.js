@@ -1,17 +1,22 @@
 import React, { Component } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "Content/Home";
+import News from "Content/News/News";
 import Navigation from "Layout/Navigation/components/Navigation";
 import Footer from "Layout/Footer/Footer";
 class App extends Component {
   render() {
     return (
       <BrowserRouter>
-        <React.Fragment>
+        <div>
           <Navigation />
-          <Home />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/news" component={News} />
+            {/* <Route exact path="/news/:url" component={NewsPage} /> */}
+          </Switch>
           <Footer />
-        </React.Fragment>
+        </div>
       </BrowserRouter>
     );
   }
