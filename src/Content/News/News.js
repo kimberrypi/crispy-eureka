@@ -21,10 +21,6 @@ class News extends Component {
     this.state = { articles: articles };
   }
 
-  // componentDidMount() {
-
-  // }
-
   render() {
     return (
       <Content title="News">

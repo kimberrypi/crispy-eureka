@@ -1,0 +1,62 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css";
+
+.has-icons-left {
+  padding-left: 10px;
+}
+
+.is-medium {
+  padding-bottom: 9rem !important;
+  padding-top: 9rem !important;
+}
+
+.is-large {
+  padding-bottom: 12rem !important;
+  padding-top: 12rem !important;
+}
+
+.has-top-and-bottom-padding {
+  padding-top: 8.5rem !important;
+  padding-bottom: 12rem !important;
+}
+
+.logo {
+  padding-bottom: 10px;
+}
+
+.banner {
+  opacity: 50%;
+}
+
+.hero {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hero > .hero-body {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+nav {
+  z-index: 100;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  width: 100%;
+}
+
+.box {
+  padding: 30px;
+  background: white;
+  color: blue;
+}
+
+.card {
+  margin: 10px;
+  padding: 10px;
+  border: none;
+}
