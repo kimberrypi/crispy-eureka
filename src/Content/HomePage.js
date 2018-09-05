@@ -3,7 +3,7 @@ import MissionVision from "Content/MissionVision";
 import Values from "Content/Values";
 import banner from "assets/images/admin_council_bw.png";
 
-const Home = () => (
+const HomePage = () => (
   <React.Fragment>
     <img src={banner} alt="Young Pharmacists Group" width="100%" />
     <MissionVision />
@@ -11,4 +11,4 @@ const Home = () => (
   </React.Fragment>
 );
 
-export default Home;
+export default HomePage;
