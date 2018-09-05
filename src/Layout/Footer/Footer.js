@@ -1,6 +1,6 @@
 import React from "react";
 import { Jumbotron } from "reactstrap";
-import logo from "../assets/images/admin_council_bw.png";
+import logo from "../../assets/images/ypg_logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMapMarkedAlt, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faFacebook } from "@fortawesome/fontawesome-free-brands";
