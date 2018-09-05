@@ -12,7 +12,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/fontawesome-free-brands";
 
-import Content from "../../Layout/Content/Content";
+import Content from "../../Layout/Content";
 import articles from "../News/articles.json";
 
 class News extends Component {
