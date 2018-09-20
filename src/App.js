@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-import Home from "Content/Home";
-import News from "Content/News/News";
-import Navigation from "Layout/Navigation/components/Navigation";
-import Footer from "Layout/Footer/Footer";
-import Membership from "Content/Membership";
+import Home from "./Content/Home";
+import News from "./Content/News/News";
+import Navigation from "./Layout/Navigation/components/Navigation";
+import Footer from "./Layout/Footer/Footer";
+import Membership from "./Content/Membership";
 
 class App extends Component {
   render() {

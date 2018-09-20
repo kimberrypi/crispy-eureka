@@ -12,8 +12,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/fontawesome-free-brands";
 
-import Content from "Layout/Content";
-import articles from "Content/News/articles.json";
+import Content from "../../Layout/Content";
+import articles from "./articles.json";
 
 class News extends Component {
   constructor(props) {

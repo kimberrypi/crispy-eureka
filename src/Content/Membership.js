@@ -1,6 +1,6 @@
 import React from "react";
 import { ListGroup, ListGroupItem } from "reactstrap";
-import Content from "Layout/Content";
+import Content from "../Layout/Content";
 
 const ways = [
   {
