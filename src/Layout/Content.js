@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row } from "reactstrap";
+import { Container } from "reactstrap";
 
 const Content = ({ title, children }) => (
   <div className="has-top-and-bottom-padding">

@@ -4,7 +4,7 @@ import Values from "Content/Values";
 import banner from "assets/images/admin_council_bw.png";
 
 const renderPrimer = (
-  <section className="center">
+  <section style={{ "text-align": "center" }}>
     {/* <header>
       <h3>YPG Primer</h3>
     </header> */}
@@ -14,6 +14,7 @@ const renderPrimer = (
       src="https://www.youtube.com/embed/euXhWJp9h9k"
       frameborder="0"
       allow="autoplay; encrypted-media"
+      title="YPG Primer"
       allowfullscreen
     />
   </section>
