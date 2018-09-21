@@ -1,0 +1,8 @@
+.hero {
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .hero .hero-body {
+    flex-grow: 1;
+    flex-shrink: 0; }

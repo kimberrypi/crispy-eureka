@@ -1,0 +1,17 @@
+.has-icons-left {
+  padding-left: 10px; }
+
+.is-primary {
+  background: #133195 !important; }
+
+.is-medium {
+  padding-bottom: 9rem !important;
+  padding-top: 9rem !important; }
+
+.is-large {
+  padding-bottom: 12rem !important;
+  padding-top: 12rem !important; }
+
+.has-top-and-bottom-padding {
+  padding-top: 8.5rem !important;
+  padding-bottom: 12rem !important; }

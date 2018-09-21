@@ -15,10 +15,10 @@ const navbarItems = [
     link: "/",
     title: "Home"
   },
-  // {
-  //   link: "/",
-  //   title: "Membership"
-  // },
+  {
+    link: "/membership",
+    title: "Membership"
+  },
   {
     link: "/news",
     title: "News"
