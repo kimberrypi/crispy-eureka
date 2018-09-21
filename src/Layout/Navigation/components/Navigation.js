@@ -22,11 +22,11 @@ const navbarItems = [
   {
     link: "/news",
     title: "News"
+  },
+  {
+    link: "/about",
+    title: "About"
   }
-  // {
-  //   link: "/",
-  //   title: "About"
-  // }
 ];
 
 class Navigation extends React.Component {

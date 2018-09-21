@@ -5,6 +5,7 @@ import News from "./Content/News/News";
 import Navigation from "./Layout/Navigation/components/Navigation";
 import Footer from "./Layout/Footer/Footer";
 import Membership from "./Content/Membership";
+import About from "./Content/About";
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
             <Route exact path="/news" component={News} />
             {/* <Route exact path="/news/:url" component={NewsPage} /> */}
             <Route exact path="/membership" component={Membership} />
+            <Route exact path="/about" component={About} />
           </Switch>
           <Footer />
         </div>
