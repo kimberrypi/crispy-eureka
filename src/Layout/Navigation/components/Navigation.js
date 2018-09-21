@@ -8,7 +8,7 @@ import {
   Nav,
   NavItem
 } from "reactstrap";
-import logo from "assets/images/ypg_logo.png";
+import logo from "../../../assets/images/ypg_logo.png";
 
 const navbarItems = [
   {
