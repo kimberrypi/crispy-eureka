@@ -10,9 +10,11 @@ import {
   CardTitle,
   CardText,
   Row,
-  Col
+  Col,
+  Media
 } from "reactstrap";
 import classnames from "classnames";
+import officers from "./officers.json";
 
 class Officers extends Component {
   constructor(props) {
@@ -20,7 +22,7 @@ class Officers extends Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      activeTab: "1"
+      activeTab: 0
     };
   }
 
@@ -33,31 +35,54 @@ class Officers extends Component {
   }
 
   render() {
+    const renderTabs = officers.map((batch, index) => (
+      <NavItem key={index}>
+        <NavLink
+          className={classnames({
+            active: this.state.activeTab === batch.id
+          })}
+          onClick={() => {
+            this.toggle({ index });
+          }}
+        >
+          {batch.year}
+        </NavLink>
+      </NavItem>
+    ));
+
+    const renderTabContent = (
+      <Row>
+        <TabContent activeTab={this.state.activeTab}>
+          {officers.map((batch, index) => (
+            <TabPane tabId={batch.id} key={index}>
+              <Row>
+                <Media>
+                  <Media left>
+                    <img
+                      src={batch.officers[0].imageUrl}
+                      alt={batch.officers[0].name}
+                      className="img-thumbnail"
+                    />
+                    {/* <Media
+                      object
+                      data-src="holder.js/64x64"
+                      // data-src={batch.officers[0].imageUrl}
+                      alt={batch.officers[0].name}
+                    /> */}
+                  </Media>
+                </Media>
+              </Row>
+            </TabPane>
+          ))}
+        </TabContent>
+      </Row>
+    );
+
     return (
       <div>
-        <Nav tabs>
-          <NavItem>
-            <NavLink
-              className={classnames({ active: this.state.activeTab === "1" })}
-              onClick={() => {
-                this.toggle("1");
-              }}
-            >
-              Tab1
-            </NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink
-              className={classnames({ active: this.state.activeTab === "2" })}
-              onClick={() => {
-                this.toggle("2");
-              }}
-            >
-              Moar Tabs
-            </NavLink>
-          </NavItem>
-        </Nav>
+        <Nav tabs>{renderTabs}</Nav>
         <TabContent activeTab={this.state.activeTab}>
+          {renderTabContent}
           <TabPane tabId="1">
             <Row>
               <Col sm="12">

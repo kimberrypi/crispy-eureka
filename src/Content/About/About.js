@@ -1,10 +1,10 @@
 import React from "react";
 import { Row, Col } from "reactstrap";
-import Content from "Layout/Content";
-import Officers from "./About/Officers";
+import Content from "../../Layout/Content";
+import Officers from "./Officers";
 import salenga from "assets/images/roderick_salenga.png";
 
-const renderFoundingPresicent = (
+const renderFoundingPresident = (
   <Row>
     <Col>
       <img src={salenga} alt="Eric Salenga" width="300px" />
@@ -23,7 +23,7 @@ const renderFoundingPresicent = (
 
 const About = () => (
   <Content title="About Us">
-    {renderFoundingPresicent} <Officers />
+    {renderFoundingPresident} <Officers />
   </Content>
 );
 
