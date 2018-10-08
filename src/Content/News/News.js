@@ -45,8 +45,11 @@ class News extends Component {
                 <CardText>{article.date}</CardText>
                 <CardSubtitle>
                   <div
-                    dangerouslySetInnerHTML={{ __html: article.description }}
+                    dangerouslySetInnerHTML={{
+                      __html: article.description.substr(0, 300)
+                    }}
                   />
+                  ...
                 </CardSubtitle>
 
                 {/* <Button>Button</Button> */}
